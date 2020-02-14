@@ -12,12 +12,8 @@ header {
     margin-bottom: 1em;
 }
 
-.navbar {
-    margin-bottom: 2em;
-}
-
 h1 {    
-    font-size: 28px;
+    font-size: 2em;
     color: #eee;
     padding: 20px 0;
     margin-bottom: 20px;
@@ -42,24 +38,23 @@ h5 {
 }
 
 .container-fluid {
-    margin-left: 10em; 
-    margin-right: 10em;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
 }
+
 .japanese-font {
     font-family: 'Kosugi Maru', sans-serif;
     /* font-family: 'Sawarabi Mincho', sans-serif; */
 }
-
-#main-bio,
-#contact-info,
-#bio-image {
-    float: left;
+#bio-pic {
+    margin-right: 2em;
+    margin-bottom: 2em;
 }
-
 #main-bio {
     width: 70%;
-    border: pink;
-} 
+}
+
 #jp-bio {
     font-size: 24px;
 }
@@ -67,10 +62,10 @@ h5 {
 #contact-info {
     width: 30%;
 }  
-#bio-image {
-    width: auto;
-    height: 200px;
-    margin-right: 20px;
+
+#hidden {
+    visibility: hidden;
 }
+
 
   
