@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>About Moojig</title>
-    <!-- <link rel="stylesheet" type="text/css" href="assets/reset.css">  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Lemonada|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css">      
 </head>
 
@@ -12,24 +13,34 @@
     <header>
         <h1>Biography | <span class="japanese-font">自伝</span></h1>
     </header>
-    <div class="container">
-        <section id="main-bio">
-            <h2>Moojig Battsogt</h2>
-            <img id="bio-image" src="assets/profile_pic.jpg" alt="A headshot of Moojig">
+    <div class="container-fluid">
+        <div class="card" style="width: 22rem;">
+            <img src="assets/profile_pic.jpg" class="card-img-top" alt="Moojig's headshot">
+            <div class="card-body">
+              <h5 class="card-title">M. Moojig Battsogt</h5>
+              <ul>
+                <li><strong>Email:</strong>     <a href="mailto:moojig@nyu.edu" target="_top">moojig@nyu.edu</a></li>
+                <li><strong>Github:</strong>    <a href="https://github.com/moojigc">moojigbc</a></li>
+                <li><strong>Website:</strong>   <a href="https://www.moojigbc.com">www.moojigbc.com</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <section id="main-bio" class="container-sm">
+            <h2>A Brief Summary | <span class="japanese-font">要約</span></h1></h2>
             <p>I am a 23-year-old from Orange, CT. I graduated from NYU in 2018 with a bachelor's degree in economics.
+                My hobbies include photography, videogames, anime, and learning Japanese. 
             </p>
             <p> I'm taking UConn's new Coding Bootcamp, where I'm learning full-stack web development.
-            My hobbies include photography, videogames, anime, and learning Japanese. <span class="japanese-font">今は、日本へ将来に引っ越すために、日本語を一人で勉強しているんです。すごく楽しいですよ！</span>
+            </p>    
+            <p class="japanese-font" id="jp-bio">
+                初めまして！僕はコネチカット州のオレンジ町に住んでいる23歳の者です。2018年経済学の学士を手に入れて、ニューヨーク大学を卒業しました。
+                趣味は、写真撮影やゲームやアニメや日本語習うことが好きなんです。
             </p>
-        </section>
-
-        <section id="contact-info">
-            <h2>Contact Info</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:moojig@nyu.edu" target="_top">moojig@nyu.edu</a></li>
-                <li><strong>Github:</strong> <a href="https://github.com/moojigc">moojigbc</a></li>
-                <li><strong>Website:</strong> <a href="https://www.moojigbc.com">www.moojigbc.com</a></li>
-            </ul>                    
+            <p class="japanese-font" id="jp-bio">
+                今は、コネチカット大学の新しいコーディング・ボーっトキャンプに参加しているんです。
+                このクラスでは、フルスタック・Webプログラミングを勉強しています。よろしくお願いします。
+                </p>
         </section>
     </div>
 </body>
