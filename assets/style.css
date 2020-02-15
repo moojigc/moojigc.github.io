@@ -48,11 +48,12 @@ h2 {
     z-index: 3;
 }
 #name-jp {
-    position: absolute;
-    bottom: 7.8em;
+    position: relative;
+    bottom: 2.9em;
     z-index: 1;
+    margin-bottom: -2em;
 }
-#name:active {
+#name:active, #name:focus {
     visibility: hidden;
 }
 
