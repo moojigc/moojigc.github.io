@@ -33,27 +33,27 @@ h2 {
     margin-bottom: 1em;
 }
 
-h5 {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-}
-/* #jp-name {
-    font-size: 20px;
-    position: relative;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px; width: 1px;
-    margin: -1px; padding: 0;
-    border: 0;
-}
-#jp-name:active {
-    visibility: visible;
-} */
-
 .card {
     font-family: 'Nunito', sans-serif;
     float: left;
+}
+/* the button with my name on it */
+#name, #name-jp {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: .5em;
+}
+#name {
+    position: relative;
+    z-index: 3;
+}
+#name-jp {
+    position: absolute;
+    bottom: 7.8em;
+    z-index: 1;
+}
+#name:active {
+    visibility: hidden;
 }
 
 .container-fluid {
