@@ -10,48 +10,77 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div idclass="row">
-            <div class="col-md-12">
-                <header>
-                    <h1>About Me | <span class="japanese-font">自己紹介</span></h1>
-                </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img class="navbar-brand" src="assets/moojig-logo-white.png" alt="Moojig-logo" style="width: 5em;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
             </div>
-        </div>
+          </nav>
+    </header>
+
+    <div id="wrapper" class="container-fluid">
         <div class="row">
+            <!-- Page padding -->
             <div class="col-md-2">
-            </div>
+                </div>
             <div class="col-md-8">
-                <!-- start headshot and contact info -->
-                <div id="bio-pic" class="card" style="width: 20rem;">
-                    <img src="assets/profile_pic.jpg" class="card-img-top" alt="Moojig's headshot">
-                    <div class="card-body">
-                      <button id="name" type="button" class="btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
-                      <button id="name-jp" type="button" class="btn btn-outline-dark btn-lg btn-block text-nowrap">ムージグ・バッツォクト</button>
-                      <ul>
-                        <li><strong>Email:</strong>     <a href="mailto:moojig@nyu.edu" target="_top">moojig@nyu.edu</a></li>
-                        <li><strong>Github:</strong>    <a href="https://github.com/moojigc">moojigbc</a></li>
-                        <li><strong>Website:</strong>   <a href="https://www.moojigbc.com">www.moojigbc.com</a></li>
-                    </ul>
+                <div class="row">
+                    <div id="about-me" class="col-sm-12">
+                        <h1>About Me | <span lang="ja">自己紹介</span></h1>
                     </div>
                 </div>
-                <!-- Main bio section -->
-                <section id="main-bio" class="container-sm">
-                    <h2><u>A Brief Summary | <span class="japanese-font">要約</span></u></h2>
-                    <p>I am a 23-year-old from Orange, CT. I graduated from NYU in 2018 with a bachelor's degree in economics.
-                        My hobbies include photography, videogames, anime, and learning Japanese. 
-                    </p>
-                    <p> I'm taking UConn's Coding Bootcamp, where I'm learning full-stack web development.
-                    </p>    
-                    <p class="japanese-font" id="jp-bio">
-                        初めまして！僕はコネチカット州のオレンジ町に住んでいる23歳の者です。2018年経済学の学士を手に入れて、ニューヨーク大学を卒業しました。
-                        趣味は、写真撮影やゲームやアニメや日本語習うことが好きなんです。
-                    </p>
-                    <p class="japanese-font" id="jp-bio">
-                        今は、コネチカット大学の新しいコーディング・ボーットキャンプに参加しているんです。
-                        このクラスでは、フルスタック・Webプログラミングを勉強しています。よろしくお願いします。
-                        </p>
-                </section>
+                <div class="container-fluid">
+                    <!-- start headshot and contact info -->
+                    <div id="bio-pic" class="card">
+                        <img src="assets/profile_pic.jpg" class="card-img-top" alt="Moojig's headshot">
+                        <div class="card-body">
+                            <button id="name" type="button" class="btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
+                            <button id="name-jp" type="button" class="btn btn-outline-dark btn-lg btn-block text-nowrap" lang="ja">ムージグ・バッツォクト</button>
+                            <ul>
+                                <li><strong>Email:</strong>     <a href="mailto:moojig@nyu.edu" target="_top">moojig@nyu.edu</a></li>
+                                <li><strong>Github:</strong>    <a href="https://github.com/moojigc">moojigbc</a></li>
+                                <li><strong>Website:</strong>   <a href="https://www.moojigbc.com">www.moojigbc.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Main bio section -->
+                    <article id="main-bio" class="container-sm">
+                            <p>I am a 23-year-old from Orange, CT. I graduated from NYU in 2018 with a bachelor's degree in economics.
+                                My hobbies include photography, videogames, anime, and learning Japanese. 
+                            </p>
+                            <p> I'm taking UConn's Coding Bootcamp, where I'm learning full-stack web development.
+                            </p>    
+                            <p lang="ja">
+                                初めまして！僕はコネチカット州のオレンジ町に住んでいる23歳の者です。2018年経済学の学士を手に入れて、ニューヨーク大学を卒業しました。
+                                趣味は、写真撮影やゲームやアニメや日本語習うことが好きなんです。
+                            </p>
+                            <p lang="ja">
+                                今は、コネチカット大学の新しいコーディング・ボーットキャンプに参加しているんです。
+                                このクラスでは、フルスタック・Webプログラミングを勉強しています。よろしくお願いします。
+                            </p>
+                    </article>   
+                </div>
+
+            <!-- Page padding -->
             </div>
             <div class="col-md-2">
             </div>

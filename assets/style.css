@@ -2,11 +2,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 150%;
-    background-color: #e9ecef;
-    color: #333333;
+    background-color: rgb(255, 245, 240) ;
+    color: black;
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #333333;
     margin: 0;
@@ -23,16 +24,12 @@ h1 {
     text-align: center;
     background: #333;
 }
-h1 .japanese-font {
+
+h1 span:lang(ja) {
     font-size: .9em;
+    font-weight: normal;
 }
 
-h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
 .container-fluid {
     padding: 0;
     margin: 0;
@@ -49,9 +46,10 @@ h2 {
     font-family: 'Nunito', sans-serif;
     float: left;
 }
+
 /* the button with my name on it */
 #name, #name-jp {
-    font-weight: bold;
+    font-weight: 550;
     text-align: center;
     margin-bottom: .5em;
 }
@@ -69,19 +67,17 @@ h2 {
     opacity: 0;
 }
 
-.japanese-font {
-    font-family: 'Kosugi Maru', sans-serif;
-    /* font-family: 'Sawarabi Mincho', sans-serif; */
-}
 #bio-pic {
+    float: left;
     margin-right: 1.5em;
     margin-bottom: 1.5em;
+    width: 22rem;
 }
-/* #main-bio {
-    width: 70%;
-} */
+#main-bio {
+    margin-top: 0;
+}
 
-#jp-bio {
+p:lang(ja) {
     font-size: 24px;
 }
 
@@ -89,5 +85,16 @@ h2 {
     visibility: hidden;
 }
 
+#about-me {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: .5em;
+}
+
+:lang(ja) {
+    font-family: 'Kosugi Maru', sans-serif;
+}
 
   
