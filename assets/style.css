@@ -2,53 +2,49 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 150%;
-    background-color: rgb(255, 245, 240) ;
+    background-color: rgba(43, 42, 75, 0.671) ;
     color: black;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333333;
-    margin: 0;
     margin-bottom: 1em;
 }
 
 h1 {    
     font-family: 'Nunito', sans-serif;
     font-size: 2.1em;
-    color: #eee;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0;
     text-align: center;
-    background: #333;
-}
-
-h1 span:lang(ja) {
-    font-size: .9em;
-    font-weight: normal;
 }
 
 .container-fluid {
     padding: 0;
-    margin: 0;
 }
+
+.container-md {
+    border: lightgray;
+    border-radius: .5em;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
 .row {
     margin: 0;
-    padding: 0;
-}
-.col-md-12 {
-    padding: 0;
 }
 
 .card {
     font-family: 'Nunito', sans-serif;
-    float: left;
 }
 
 /* the button with my name on it */
-#name, #name-jp {
+#name, #name-ja {
     font-weight: 550;
     text-align: center;
     margin-bottom: .5em;
@@ -57,7 +53,7 @@ h1 span:lang(ja) {
     position: relative;
     z-index: 3;
 }
-#name-jp {
+#name-ja {
     position: relative;
     bottom: 2.9em;
     z-index: 1;
@@ -66,6 +62,12 @@ h1 span:lang(ja) {
 #name:active, #name:focus {
     opacity: 0;
 }
+#button-desc {
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+    text-align: center;
+}
 
 #bio-pic {
     float: left;
@@ -73,28 +75,28 @@ h1 span:lang(ja) {
     margin-bottom: 1.5em;
     width: 22rem;
 }
-#main-bio {
-    margin-top: 0;
-}
-
-p:lang(ja) {
-    font-size: 24px;
-}
-
-#hidden {
-    visibility: hidden;
-}
 
 #about-me {
-    background-color: #333333;
-    color: white;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #333333;
     text-align: center;
     margin-bottom: 1em;
     border-radius: .5em;
+    border-width: 3px;
 }
 
+/* Japanese-specific styles */
 :lang(ja) {
     font-family: 'Kosugi Maru', sans-serif;
 }
+h1 span:lang(ja) {
+    font-size: .9em;
+    font-weight: 560;
+}
+p:lang(ja) {
+    font-size: 28px;
+}
+
 
   
