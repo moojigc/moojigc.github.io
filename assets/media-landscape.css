@@ -1,0 +1,21 @@
+@media screen and (orientation:landscape) {
+    .desktop {
+        display: flex;
+    }
+    .navbar {
+        width: unset;
+        position: unset;
+        z-index: 1;
+        top: unset;
+        font-size: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        justify-content: space-between;
+    }
+    .mobile {
+        display: none;
+    }
+    #wrapper {
+        margin-top: unset;
+    }
+}
