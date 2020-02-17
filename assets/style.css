@@ -15,6 +15,15 @@ nav img {
     width: 5em;
 }
 
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 h1 {    
     font-family: 'Nunito', sans-serif;
     font-size: 2.1em;
@@ -81,7 +90,7 @@ h1 {
     text-align: center;
 }
 
-#bio-pic {
+.card {
     float: left;
     margin-right: 1.5em;
     margin-bottom: 1.5em;
