@@ -1,16 +1,57 @@
+
 @media screen and (max-width: 1024px) {
     body {
         font-size: 1.5em;
         line-height: 1.5em;
     }
-    nav img {
-        width: 7em;
-    }
+    /* begin navbar stuff */
     .navbar {
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 3em;
         font-size: 1.6em;
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
+        justify-content: space-around;
     }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+    }
+    .navbar-nav {
+        flex-direction: row;
+        padding: .8em;
+    }
+    .navbar-nav li {
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+        font-size: 1.2em;
+    }
+    .mobile-logo-container {
+        background-color: #343a40;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        align-content: center;
+    }
+    #mobile-image {
+        width: 10em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* end navbar stuff */
+    #wrapper {
+        margin-top: 13em;
+    }
+
     .card {
         width: auto;
         margin-left: auto;
@@ -23,6 +64,7 @@
     .card .btn {
         font-size: 2em;
     }
+    /* JA specific styles */
     .card #name-ja {
         bottom: 2.4em;
     }

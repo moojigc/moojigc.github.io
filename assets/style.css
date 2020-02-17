@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Kosugi Maru', sans-serif;
     font-size: 20px;
     line-height: 150%;
     background-color: rgba(43, 42, 75, 0.671) ;
@@ -8,24 +8,33 @@ body {
     padding: 0;
 }
 
+/* all navbar stuff */
 header {
     margin-bottom: 1em;
 }
 nav img {
     width: 5em;
 }
-
 .navbar {
+    /* this moves the nav links to the right for some reason */
     justify-content: space-between;
 }
+.navbar-collapse {
+    /* I dont even remeber what this does */
+    /* flex-grow: unset; */
+}
 
+.mobile {
+    display: none;
+}    
 .navbar-brand {
     padding-top: 0px;
     padding-bottom: 0px;
 }
+/* end navbar */
 
 h1 {    
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', 'Kosugi Maru', sans-serif;
     font-size: 2.1em;
     font-weight: bold;
     padding-top: 10px;
@@ -65,7 +74,7 @@ h1 {
     margin-right: 1.5em;
     margin-bottom: 1em;
     width: 22rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', 'Kosugi Maru', sans-serif;
 }
 .card p {
     margin: 0;
@@ -95,9 +104,6 @@ h1 {
 }
 
 /* Japanese-specific styles */
-:lang(ja) {
-    font-family: 'Kosugi Maru', sans-serif;
-}
 h1 span:lang(ja) {
     font-size: .9em;
     font-weight: 560;
