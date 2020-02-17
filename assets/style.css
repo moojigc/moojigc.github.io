@@ -65,6 +65,10 @@ h1 {
 }
 
 /* form */
+form {
+    box-sizing: unset;
+    width: unset;
+}
 input {
     width: 100%;
 }
@@ -83,6 +87,19 @@ input {
     font-size: .8em;
     text-align: center;
 }
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: #343a40;
+    text-align: center;
+}
+footer p {
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 0;
+    color: white;
+}
+
 
 /* form stuff */
 
@@ -108,6 +125,10 @@ input {
 }
 
 /* Japanese-specific styles */
+:lang(ja) {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
 h1 span:lang(ja) {
     font-size: .9em;
     font-weight: 560;

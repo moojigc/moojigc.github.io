@@ -46,8 +46,8 @@
         margin-left: auto;
         margin-right: auto;
     }
-
     /* end navbar stuff */
+
     #wrapper {
         margin-top: 13em;
     }
@@ -64,6 +64,11 @@
     .card .btn {
         font-size: 2em;
     }
+
+    footer {
+        position: relative;
+    }
+
     /* JA specific styles */
     .card #name-ja {
         bottom: 2.4em;
