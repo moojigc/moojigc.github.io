@@ -17,6 +17,19 @@
         margin-right: auto;
         float: unset;
     }
+    .card p {
+        font-size: 1.5em;
+    }
+    .card .btn {
+        font-size: 2em;
+    }
+    .card #name-ja {
+        bottom: 2.4em;
+    }
+    p, p:lang(ja) {
+        font-size: 2em;
+        line-height: 2em;
+    }
     #main-bio {
         float: left;
     }
