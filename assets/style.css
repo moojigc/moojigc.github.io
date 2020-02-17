@@ -19,17 +19,12 @@ nav img {
     /* this moves the nav links to the right for some reason */
     justify-content: space-between;
 }
-.navbar-collapse {
-    /* I dont even remeber what this does */
-    /* flex-grow: unset; */
-}
-
 .mobile {
     display: none;
 }    
 .navbar-brand {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 /* end navbar */
 
@@ -69,6 +64,12 @@ h1 {
     margin: 0;
 }
 
+/* form */
+input {
+    width: 100%;
+}
+
+/* begin card that displays my headshot */
 .card {
     float: left;
     margin-right: 1.5em;
@@ -82,6 +83,9 @@ h1 {
     font-size: .8em;
     text-align: center;
 }
+
+/* form stuff */
+
 
 /* the button with my name on it */
 #name, #name-ja {
