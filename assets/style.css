@@ -102,7 +102,10 @@ footer p {
 
 
 /* form stuff */
-
+form {
+    width: 25em;
+    max-width: fit-content;
+}
 
 /* the button with my name on it */
 #name, #name-ja {
