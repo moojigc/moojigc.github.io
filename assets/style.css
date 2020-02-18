@@ -49,6 +49,7 @@ h1 {
     border-width: 1px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
+    margin-bottom: 5em;
 }
 .page-h1 {
     background-color: transparent;
@@ -70,7 +71,7 @@ form {
     width: unset;
 }
 input {
-    width: 100%;
+    width: 25em;
 }
 
 /* begin card that displays my headshot */
@@ -92,6 +93,7 @@ footer {
     bottom: 0px;
     background-color: #343a40;
     text-align: center;
+    margin-top: 1.5em;
 }
 footer p {
     font-size: 15px;
@@ -138,6 +140,7 @@ h1 span:lang(ja) {
 }
 p:lang(ja) {
     font-size: 28px;
+    line-height: 1.5em;
 }
 
 
