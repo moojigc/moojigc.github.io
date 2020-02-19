@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header-ja">
         <!-- Hidden img on desktop??? -->
         <div class="mobile-logo-container mobile">
             <img id="mobile-image" class="navbar-brand mobile" src="assets/moojig-logo-white.png" alt="Moojig-logo">
@@ -24,14 +24,17 @@
             <div id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="index.html">自伝 <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="portfolio.html">ポートフォリオ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html">連絡</a>
                   </li>
+                <button onclick="switchToEnglish()" class="btn btn-primary language-button">
+                    English
+                </button>
               </ul>
             </div>
         </nav>
@@ -53,10 +56,54 @@
         </div>
     </header>
 
-    <div class="container-lg wrapper">
+    <header id="header-en">
+        <!-- Hidden img on desktop??? -->
+        <div class="mobile-logo-container mobile">
+            <img id="mobile-image" class="navbar-brand mobile" src="assets/moojig-logo-white.png" alt="Moojig-logo">
+        </div>
+        <!-- Desktop navbar???? -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark desktop">
+            <img class="navbar-brand desktop" src="assets/moojig-logo-white.png" alt="Moojig-logo">
+
+            <div id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <button onclick="switchToJapanese()" class="btn btn-primary language-button">
+                    日本語
+                </button>
+              </ul>
+            </div>
+        </nav>
+        <!-- Mobile navbar???? -->
+        <div class="navbar navbar-expand-lg navbar-light bg-light mobile">
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="body-en" class="container-lg wrapper">
         <div class="row">
             <div class="page-h1 col-sm-12">
-                <h1>About Me |&nbsp<span lang="ja">自己紹介</span></h1>
+                <h1>About Me</h1>
             </div>
         </div>
         <div class="row">
@@ -79,8 +126,38 @@
                         </p>
                         <p> Right now, I'm taking UConn's Coding Bootcamp, where I'm learning full-stack web development.
                         </p>    
+                        
+                </article>   
+            </div>
+        </div>
+    </div> 
+
+    <div id="body-ja" class="container-lg wrapper">
+        <div class="row">
+            <div class="page-h1 col-sm-12">
+                <h1><span lang="ja">自己紹介</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <!-- start headshot and contact info -->
+                <div id="bio-pic" class="card">
+                    <img src="assets/profile_pic.jpg" class="card-img-top" alt="Moojig's headshot">
+                    <div class="card-body">
+                        <button ontouchstart="" tabindex="0" id="name" type="button" class="btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
+                        <button id="name-ja" type="button" class="btn btn-outline-dark btn-lg btn-block text-nowrap" lang="ja">
+                            ムージグ・バッツォクト
+                        </button>
+                        <p>名前を押すと片仮名に変更！</p>
+                    </div>
+                </div>
+                <!-- Main bio section -->
+                <article id="main-bio" class="container-lg">
                         <p lang="ja">
-                            初めまして！僕は<ruby>Connecticut<rt>コネチカット</rt></ruby>州のオレンジ町に住んでいる23歳の者です。2018年には、ニューヨーク大学を卒業しました。専攻が経済学で、副専攻が映画の製作することなんでした。趣味は、写真撮影やゲームやアニメや漫画などが好きなんですよ。もし僕の写真を見たかったら、このサイト（<ruby>SquareSpace<rt>スクエアースペース</rt></ruby>に開催）<a href="https://www.moojigbc.com">moojigbc.com</a>訪ねてください。　
+                            初めまして！
+                        </p>
+                        <p lang="ja">
+                            僕は<ruby>Connecticut<rt>コネチカット</rt></ruby>州のオレンジ町に住んでいる23歳の者です。2018年には、ニューヨーク大学を卒業しました。専攻が経済学で、副専攻が映画の製作することなんでした。趣味は、写真撮影やゲームやアニメや漫画などが好きなんですよ。もし僕の写真を見たかったら、このサイト（<ruby>SquareSpace<rt>スクエアースペース</rt></ruby>に開催）<a href="https://www.moojigbc.com">moojigbc.com</a>訪ねてください。　
                         </p>
                         <p lang="ja">
                             現在、<ruby>Connecticut<rt>コネチカット</rt></ruby>大学の新しいコーディング・ブーットキャンプに参加しているんです。
@@ -94,6 +171,29 @@
     <footer class="container-fluid">
         <p>© Munkhtsogt Battsogt 2020</p>
     </footer>
+
+    <script>
+        var bodyJapanese = document.getElementById("body-ja");
+        var headerJapanese = document.getElementById("header-ja");
+        var bodyEnglish = document.getElementById("body-en");
+        var headerEnglish = document.getElementById("header-en");
+
+        function switchToEnglish() {
+            headerJapanese.style.display = "none";
+            bodyJapanese.style.display = "none";
+            headerEnglish.style.display = "block";
+            bodyEnglish.style.display = "block";
+
+        }
+
+        function switchToJapanese() {
+            headerJapanese.style.display = "block";
+            bodyJapanese.style.display = "block";
+            headerEnglish.style.display = "none";
+            bodyEnglish.style.display = "none";
+        }
+
+    </script>
 
 </body>
 

@@ -28,6 +28,10 @@ nav img {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.language-button {
+    margin-left: 1em;
+}
+
 /* end navbar */
 
 h1 {    
@@ -135,7 +139,6 @@ ruby rt {
     top: .6em;
     margin-top: -.6em;
 }
-
 h1 span:lang(ja) {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: .9em;
@@ -146,5 +149,7 @@ p:lang(ja) {
     line-height: 1.5em;
 }
 
-
+#header-en, #body-en {
+    display: none;
+}
   
