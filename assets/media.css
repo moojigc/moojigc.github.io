@@ -16,14 +16,16 @@
         justify-content: space-around;
     }
     .desktop {
+        /* Sets the desktop version of the navbar to not display on mobile */
         display: none;
     }
     .mobile {
+        /* Sets the mobile navbar to display */
         display: flex;
     }
     .navbar-nav {
-        flex-direction: row;
-        padding: .8em;
+        flex-direction: row; /* forces the navlinks to display in row*/
+        padding: .8em; 
     }
     .navbar-nav li {
         padding-left: 1.3em;
@@ -48,15 +50,24 @@
     }
     /* end navbar stuff */
 
-    #wrapper {
+    .wrapper {
         margin-top: 13em;
     }
 
     .card {
-        width: auto;
         margin-left: auto;
         margin-right: auto;
         float: unset;
+    }
+    #bio-pic {
+        /* Remember IDs always overwrite classes even if the class is
+        in the next-in-line .css file. Have to reset width: auto in an ID for this
+        card and the other cards*/
+        width: auto;
+    }
+    #portfolio-card {
+        width: auto;
+        margin: 2em;
     }
     .card p {
         font-size: 1.5em;
@@ -64,6 +75,19 @@
     .card .btn {
         font-size: 2em;
     }
+
+    /* FORM STUFF */
+    form {
+        font-size: 2em;
+        line-height: 150%;
+    }
+    .form-control {
+        height: calc(5em + .75rem + 2px);
+    }
+    #message-input {
+        height: calc(15em + .75rem + 2px);
+    }
+
 
     footer {
         position: relative;
