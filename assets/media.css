@@ -23,14 +23,12 @@
         /* Sets the mobile navbar to display */
         display: flex;
     }
+    #navbarSupportedContent {
+        width: 80%;
+    }
     .navbar-nav {
         flex-direction: row; /* forces the navlinks to display in row*/
-        padding: .8em; 
-    }
-    .navbar-nav li {
-        padding-left: 1.3em;
-        padding-right: 1.3em;
-        font-size: 1.2em;
+        justify-content: space-between;
     }
     .mobile-logo-container {
         background-color: #343a40;
@@ -51,9 +49,10 @@
     /* end navbar stuff */
 
     .wrapper {
-        margin-top: 13em;
+        margin-top: 10em;
     }
 
+    /* Begin all card styles */
     .card {
         margin-left: auto;
         margin-right: auto;
@@ -65,9 +64,13 @@
         card and the other cards*/
         width: auto;
     }
-    #portfolio-card {
+    #portfolio-card-container {
+        display: unset;
+        float: left;
+    }
+    .portfolio-card {
         width: auto;
-        margin: 2em;
+        margin: 3em 1em 3em 1em;
     }
     .card p {
         font-size: 1.5em;
@@ -76,7 +79,7 @@
         font-size: 2em;
     }
 
-    /* FORM STUFF */
+    /* FORM Styles */
     form {
         font-size: 2em;
         line-height: 150%;
@@ -88,7 +91,7 @@
         height: calc(15em + .75rem + 2px);
     }
 
-
+    /* Footer style */
     footer {
         position: relative;
     }
