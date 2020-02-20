@@ -56,6 +56,11 @@
     .wrapper {
         margin-top: 11em;
     }
+    /* .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: unset;
+    } */
 
     /* Begin all card styles */
     .card {
@@ -105,8 +110,11 @@
     }
 
     /* JA specific styles */
-    .card #name-ja {
+    /* .card #name-ja {
         bottom: 2.4em;
+    } */
+    .card p:lang("ja") {
+        /* font-size: 1.5em; */
     }
     p, p:lang(ja) {
         font-size: 2em;
@@ -118,9 +126,9 @@
     #menu-options {
         float: left;
     }
-    article p:lang(ja) {
+    /* article p:lang(ja) {
         font-size: 2em;
         line-height: 2em;
-    }
+    } */
 
 }

@@ -137,7 +137,11 @@ h1 span:lang(ja) {
 }
 p:lang("ja") {
     font-size: 1.8rem;
-    line-height: 2rem;
+    line-height: 3rem;
+}
+.card p:lang("ja") {
+    font-size: 0.8em;
+    line-height: 2em;
 }
 
 ruby rt {
@@ -152,8 +156,3 @@ ruby rt {
     font-size: 28px;
     line-height: 1.5em;
 } */
-.card p:lang(ja) {
-    font-size: 1em;
-}
-
-  
