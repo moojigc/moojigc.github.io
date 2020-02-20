@@ -104,7 +104,7 @@ footer {
     text-align: center;
     margin-top: 1.5em;
 }
-footer p {
+footer p, footer p:lang("ja") {
     font-size: 15px;
     padding: 15px;
     margin: 0;
@@ -130,22 +130,30 @@ form {
 :lang("ja") {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-ruby rt {
-    position: relative;
-    top: .6em;
-    margin-top: -.6em;
-}
 h1 span:lang(ja) {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: .9em;
     font-weight: 560;
 }
-article p:lang(ja) {
+p:lang("ja") {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+ruby rt {
+    position: relative;
+    top: .6em;
+    margin-top: -.6em;
+    line-height: unset;
+    /* this doesn't work in Chrome for some reason */
+}
+
+/* article p:lang(ja) {
     font-size: 28px;
     line-height: 1.5em;
-}
+} */
 .card p:lang(ja) {
-    font-size: 20px;
+    font-size: 1em;
 }
 
   

@@ -118,5 +118,9 @@
     #menu-options {
         float: left;
     }
+    article p:lang(ja) {
+        font-size: 2em;
+        line-height: 2em;
+    }
 
 }
