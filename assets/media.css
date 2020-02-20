@@ -51,7 +51,7 @@
     /* end navbar stuff */
 
     .wrapper {
-        margin-top: 10em;
+        margin-top: 11em;
     }
 
     /* Begin all card styles */
@@ -59,6 +59,9 @@
         margin-left: auto;
         margin-right: auto;
         float: unset;
+        background-color: rgba(255, 160, 122, 0.747);
+        border: 4px;
+        border-style: solid;
     }
     #bio-pic {
         /* Remember IDs always overwrite classes even if the class is
@@ -72,7 +75,7 @@
     }
     .portfolio-card {
         width: auto;
-        margin: 3em 1em 3em 1em;
+        margin: 0em 1em 4em 1em;
     }
     .card p {
         font-size: 1.5em;
