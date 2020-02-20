@@ -30,6 +30,7 @@ nav img {
 }
 .language-button {
     margin-left: 1em;
+    font-size: 1em;
 }
 
 /* end navbar */
@@ -73,7 +74,7 @@ h1 {
 /* begin card modifications */
 .card {
     float: left;
-    font-family: 'Nunito', 'Kosugi Maru', sans-serif;
+    font-family: 'Nunito', 'Kosugi Maru' sans-serif;
 }
 .card p {
     margin: 0;
@@ -121,26 +122,14 @@ form {
 #name, #name-ja {
     font-weight: 550;
     text-align: center;
+    margin-top: 0em;
     margin-bottom: .5em;
-}
-#name {
-    position: relative;
-    z-index: 3;
-}
-#name-ja {
-    position: relative;
-    bottom: 2.9em;
-    z-index: 1;
-    margin-bottom: -2em;
-}
-#name:active, #name:focus {
-    opacity: 0;
 }
 
 /* Japanese-specific styles */
 :lang(ja) {
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 ruby rt {
     position: relative;
@@ -152,12 +141,12 @@ h1 span:lang(ja) {
     font-size: .9em;
     font-weight: 560;
 }
-p:lang(ja) {
+article p:lang(ja) {
     font-size: 28px;
     line-height: 1.5em;
 }
-
-#header-ja, #body-ja {
-    display: none;
+.card p:lang(ja) {
+    font-size: 20px;
 }
+
   

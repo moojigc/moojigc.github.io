@@ -29,6 +29,8 @@
     .navbar-nav {
         flex-direction: row; /* forces the navlinks to display in row*/
         justify-content: space-between;
+        padding-top: .25em;
+        padding-bottom: .25em;
     }
     .mobile-logo-container {
         background-color: #343a40;
