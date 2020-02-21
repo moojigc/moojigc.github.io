@@ -56,11 +56,6 @@
     .wrapper {
         margin-top: 11em;
     }
-    /* .col-md-6 {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        max-width: unset;
-    } */
 
     /* Begin all card styles */
     .card {
@@ -97,25 +92,15 @@
         font-size: 2rem;
         height: calc(1.5em + .75rem + 15px)
     }
-    .name-email {
-        float: unset;
-    }
+
     label {
         font-size: 2rem;
         line-height: 2em;
     }
 
-    /* Footer style */
-    footer {
-        position: relative;
-    }
-
     /* JA specific styles */
-    /* .card #name-ja {
-        bottom: 2.4em;
-    } */
     .card p:lang("ja") {
-        /* font-size: 1.5em; */
+        font-size: 1.5em;
     }
     p, p:lang(ja) {
         font-size: 2em;
@@ -127,9 +112,5 @@
     #menu-options {
         float: left;
     }
-    /* article p:lang(ja) {
-        font-size: 2em;
-        line-height: 2em;
-    } */
 
 }
