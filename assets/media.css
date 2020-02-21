@@ -93,15 +93,16 @@
     }
 
     /* FORM Styles */
-    form {
-        font-size: 2em;
-        line-height: 150%;
-    }
     .form-control {
-        height: calc(5em + .75rem + 2px);
+        font-size: 2rem;
+        height: calc(1.5em + .75rem + 15px)
     }
-    #message-input {
-        height: calc(15em + .75rem + 2px);
+    .name-email {
+        float: unset;
+    }
+    label {
+        font-size: 2rem;
+        line-height: 2em;
     }
 
     /* Footer style */

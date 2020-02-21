@@ -113,10 +113,13 @@ footer p, footer p:lang("ja") {
 
 
 /* form stuff */
-form {
-    min-width: 10em;
-    max-width: fit-content;
+.name-email {
+    min-width: 50%;
+    max-width: 100%;
+    float: left;
 }
+
+
 
 /* the button with my name on it */
 #name, #name-ja {
