@@ -72,10 +72,10 @@
         card and the other cards*/
         width: auto;
     }
-    #portfolio-card-container {
+    /* #portfolio-card-container {
         display: unset;
         float: left;
-    }
+    } */
     .portfolio-card {
         width: auto;
         margin: 0em 1em 4em 1em;
