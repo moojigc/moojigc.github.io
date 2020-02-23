@@ -57,6 +57,10 @@
         margin-top: 11em;
     }
 
+    footer {
+        position: relative;
+    }
+
     /* Begin all card styles */
     .card {
         margin-left: auto;
@@ -72,10 +76,7 @@
         card and the other cards*/
         width: auto;
     }
-    /* #portfolio-card-container {
-        display: unset;
-        float: left;
-    } */
+
     .portfolio-card {
         width: auto;
         margin: 0em 1em 4em 1em;
