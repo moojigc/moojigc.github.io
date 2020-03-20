@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/media.css">
     <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
 </head>
 
 <body>
@@ -82,7 +84,7 @@
                 <!-- Main bio section -->
             <div class="col-lg-8">
                 <article id="main-bio" class="c">
-                        <p>I'm a 23-year-old from the small town of Orange, CT. I graduated from NYU in 2018, where I received a bachelor's degree in economics with a minor in producing for film & television. 
+                        <p>I'm a <span id='age'>23</span>-year-old from the small town of Orange, CT. I graduated from NYU in 2018, where I received a bachelor's degree in economics with a minor in producing for film & television. 
                             My hobbies include photography, videogames, anime, and manga. You can see some of my photos at my (SquareSpace hosted) website, <a href="https://www.moojigbc.com">moojigbc.com</a>.
                         </p>
                         <p> Right now, I'm taking UConn's Coding Bootcamp, where I'm learning full-stack web development.
@@ -112,6 +114,11 @@
             nameJapanese.style.display = "none";
             nameEnglish.style.display = "block";
         }
+        function autoUpdateAge() { // Because I am lazy
+            age = parseInt(moment('19960229', 'YYYYMMDD').fromNow());
+            $('#age').text(age);
+        }
+        autoUpdateAge();
     </script>
 
 </body>
