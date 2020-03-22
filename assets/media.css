@@ -88,6 +88,11 @@
     .page-h1 {
         font-size: 3rem;
     }
+    p {
+        font-size: 2em;
+        line-height: 2em;
+        margin: 1rem auto 1rem auto
+    }
 
     footer {
         position: relative;
@@ -131,11 +136,7 @@
     .card p:lang("ja") {
         font-size: 1.5em;
     }
-    p, p:lang(ja) {
-        font-size: 2em;
-        line-height: 2em;
-        margin: 1rem auto 1rem auto
-    }
+
     #main-bio {
         float: left;
     }

@@ -63,12 +63,7 @@ h1 {
     padding: .5rem;
     box-shadow: inset 0px -28px 25px -16px rgba(112, 112, 112, 0.486);
 }
-#desktop-h1 {
-    writing-mode: vertical-rl;
-    margin: -1rem -2rem -1rem 1rem; 
-    border-radius: 0 .2rem .2rem 0; 
-    box-shadow: inset 28px 0px 25px -16px rgba(112, 112, 112, 0.486);
-}
+
 
 /* begin card modifications */
 .card {
@@ -134,9 +129,9 @@ h1 span:lang(ja) {
     font-size: .9em;
     font-weight: 500;
 }
-p:lang("ja") {
-    font-size: 1.2em;
-    line-height: 1.7em;
+#main-bio-ja {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
     font-weight: 200;
 }
 .card p:lang("ja") {
