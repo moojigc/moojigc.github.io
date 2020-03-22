@@ -87,6 +87,9 @@
     .wrapper {
         margin-top: 11em;
     }
+    .page-h1 {
+        font-size: 3rem;
+    }
 
     footer {
         position: relative;
