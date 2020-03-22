@@ -6,18 +6,17 @@
     #main-bio-ja >:first-child {
         margin-right: 0;
     }
+    .hide-on-desktop {
+        display: none;
+    }
     #bio-pic-desktop {
         display: flex;
     }
-    #bio-pic-mobile {
-        display: none;
-    }
+
     #body-ja {
         max-width: 1250px;
     }
-    #mobile-h1 {
-        display: none;
-    }
+
     #desktop-h1 {
         writing-mode: vertical-rl;
         margin: -1rem -2rem -1rem 1rem; 
@@ -26,7 +25,6 @@
     }
     .upright {
         text-orientation: upright;
-        text-transform: half-width;
     }
 }
 
@@ -101,13 +99,12 @@
         margin-right: auto;
         float: unset;
     }
-    #bio-pic-desktop {
-        display: none;
-    }
     #bio-pic-mobile {
         display: flex;
     }    
-
+    .hide-on-mobile {
+        display: none;
+    }
     .portfolio-card {
         width: auto;
         margin: 0em 1em 4em 1em;
