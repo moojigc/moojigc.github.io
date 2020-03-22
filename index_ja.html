@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <title>Moojigについて</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300|Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/media.css">  
     <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
 </head>
 
 <body>
@@ -60,39 +61,51 @@
     </header>
 
     <div id="body-ja" class="container-lg wrapper">
-        <div class="page-h1 row">
+        <div class="page-h1 row" id="mobile-h1">
             <div class="col-sm-12">
                 <h1><span lang="ja">自己紹介</span></h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+                <!-- Main bio section -->
+            <div id="bio-pic-mobile" class="col-lg-4">
                 <!-- start headshot and contact info -->
-                <div id="bio-pic" class="card">
+                <div class="card">
                     <img src="assets/profile_pic_sakuranoki.jpg" class="card-img-top" alt="Moojigの姿">
                     <div class="card-body">
-                        <button onclick="changeToKatakana()" id="name" type="button" class="btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
-                        <button onclick="changeToEnglish()" id="name-ja" type="button" class="btn btn-dark btn-lg btn-block" lang="ja">
+                        <button type="button" class="btn btn-dark btn-lg btn-block name">M. Moojig Battsogt</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block name-ja" lang="ja">
                             ムージグ・バッツォクト
                         </button>
                         <p>名前を押すと片仮名に変換！</p>
                     </div>
                 </div>
             </div>
-                <!-- Main bio section -->
-            <div class="col-lg-8">
-                <article id="main-bio">
-                        <p lang="ja">
-                            初めまして！
-                        </p>
-                        <p lang="ja">
-                            僕は<ruby>Connecticut<rt>コネチカット</rt></ruby>州のオレンジ町に住んでいる23歳の者です。2018年には、ニューヨーク大学を卒業しました。専攻が経済学で、副専攻が映画の製作することなんでした。趣味は、写真撮影やゲームやアニメや漫画などが好きなんですよ。もし僕の写真を見たかったら、このサイト（<ruby>SquareSpace<rt>スクエアースペース</rt></ruby>に開催）<a href="https://www.moojigbc.com">moojigbc.com</a>訪ねてください。　
-                        </p>
-                        <p lang="ja">
-                            現在、<ruby>Connecticut<rt>コネチカット</rt></ruby>大学の新しいコーディング・ブーットキャンプに参加しているんです。
-                            このクラスでは、フルスタック・Webプログラミングを勉強しています。よろしくお願いします。
-                        </p>
-                </article>   
+            <article class="col-lg-8" id="main-bio-ja">
+                <p lang="ja">
+                    初めまして！
+                </p>
+                <p lang="ja">
+                    僕は<ruby>Ｃｏｎｎｅｃｔｉｃｕｔ<rt>コネチカット</rt></ruby>州のオレンジ町に住んでいる<span id="age" class="upright">23</span>歳の者です。平成三十年には、ニューヨーク大学を卒業しました。専攻が経済学で、副専攻が映画の製作することなんでした。趣味は、写真撮影やゲームやアニメや漫画などが好きなんですよ。もし僕の写真を見たかったら、<a href="https://www.moojigbc.com">このサイト</a>（<ruby>ＳｑｕａｒｅＳｐａｃｅ<rt>スクエアースペース</rt></ruby>に開催された）訪ねてください。　
+                </p>
+                <p lang="ja">
+                    現在、<ruby>Ｃｏｎｎｅｃｔｉｃｕｔ<rt>コネチカット</rt></ruby>州大学の新しいコーディング・ブーットキャンプに参加しているんです。
+                    このクラスでは、フルスタック・Ｗｅｂプログラミングを勉強しています。よろしくお願いします。
+                </p>
+            </article>   
+            <div id="bio-pic-desktop" class="col-lg-4">
+                <!-- start headshot and contact info -->
+                <div class="card">
+                    <img src="assets/profile_pic_sakuranoki.jpg" class="card-img-top" alt="Moojigの姿">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-dark btn-lg btn-block name">M. Moojig Battsogt</button>
+                        <button type="button" class="btn btn-dark btn-lg btn-block name-ja" lang="ja">
+                            ムージグ・バッツォクト
+                        </button>
+                        <p>名前を押すと片仮名に変換！</p>
+                    </div>
+                </div>
+                <h1 class="page-h1" id="desktop-h1"><span lang="ja">自己紹介</span></h1>
             </div>
         </div>
     </div> 
@@ -102,20 +115,37 @@
     </footer>
 
     <script>
-        var nameEnglish = document.getElementById("name");
-        var nameJapanese = document.getElementById("name-ja");
+        var nameEnglish = document.querySelectorAll(".name");
+        var nameJapanese = document.querySelectorAll(".name-ja");
 
-        nameJapanese.style.display = "none";
+        nameJapanese[0].style.display = "none";
+        nameJapanese[1].style.display = "none";
 
         function changeToKatakana() {
-            nameJapanese.style.display = "block";
-            nameEnglish.style.display = "none";
+            for (var i=0; nameJapanese.length; i++) {
+                nameJapanese[i].style.display = "block";
+                nameEnglish[i].style.display = "none";
+            }
+        }
+        function changeToEnglish() {
+            for (var i=0; nameJapanese.length; i++) {
+                nameJapanese[i].style.display = "none";
+                nameEnglish[i].style.display = "block";
+            }
         }
 
-        function changeToEnglish() {
-            nameJapanese.style.display = "none";
-            nameEnglish.style.display = "block";
+        nameEnglish[0].addEventListener("click", changeToKatakana);
+        nameEnglish[1].addEventListener("click", changeToKatakana);
+
+        nameJapanese[0].addEventListener("click", changeToEnglish);
+        nameJapanese[1].addEventListener("click", changeToEnglish);
+
+        function autoUpdateAge() { // Because I am lazy
+            age = parseInt(moment('19960229', 'YYYYMMDD').fromNow());
+            document.querySelector("#age").textContent = age;
         }
+        autoUpdateAge();
+
     </script>
 
 </body>

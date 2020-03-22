@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/media.css">
     <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
 </head>
 
@@ -70,11 +69,11 @@
         <div class="row">
             <div class="col-lg-4">
                 <!-- start headshot and contact info -->
-                <div id="bio-pic" class="card shadow">
+                <div id="bio-pic" class="card">
                     <img src="assets/profile_pic.jpg" class="card-img-top" alt="Moojig's headshot">
                     <div class="card-body">
-                        <button onclick="changeToKatakana()" id="name" type="button" class="btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
-                        <button onclick="changeToEnglish()" id="name-ja" type="button" class="btn btn-dark btn-lg btn-block" lang="ja">
+                        <button type="button" class="name btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
+                        <button type="button" class="name-ja btn btn-dark btn-lg btn-block" lang="ja">
                             ムージグ・バッツォクト
                         </button>
                         <p>Click my name for a transliteration!</p>
@@ -89,7 +88,6 @@
                         </p>
                         <p> Right now, I'm taking UConn's Coding Bootcamp, where I'm learning full-stack web development.
                         </p>    
-                        
                 </article>   
             </div>
         </div>
@@ -100,8 +98,8 @@
     </footer>
 
     <script>
-        var nameEnglish = document.getElementById("name");
-        var nameJapanese = document.getElementById("name-ja");
+         var nameEnglish = document.querySelector(".name");
+        var nameJapanese = document.querySelector(".name-ja");
 
         nameJapanese.style.display = "none";
 
@@ -114,9 +112,13 @@
             nameJapanese.style.display = "none";
             nameEnglish.style.display = "block";
         }
+
+        nameEnglish.addEventListener("click", changeToKatakana);
+        nameJapanese.addEventListener("click", changeToEnglish);
+
         function autoUpdateAge() { // Because I am lazy
             age = parseInt(moment('19960229', 'YYYYMMDD').fromNow());
-            $('#age').text(age);
+            document.querySelector("#age").textContent =age;
         }
         autoUpdateAge();
     </script>

@@ -1,4 +1,36 @@
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 992px) {
+    #main-bio-ja {
+        writing-mode: vertical-rl;
+        max-height: 25rem;
+    }
+    #main-bio-ja >:first-child {
+        margin-right: 0;
+    }
+    #bio-pic-desktop {
+        display: flex;
+    }
+    #bio-pic-mobile {
+        display: none;
+    }
+    #body-ja {
+        max-width: 1250px;
+    }
+    #mobile-h1 {
+        display: none;
+    }
+    #desktop-h1 {
+        writing-mode: vertical-rl;
+        margin: -1rem -2rem -1rem 1rem; 
+        border-radius: 0 .2rem .2rem 0; 
+        box-shadow: inset 28px 0px 25px -16px rgba(112, 112, 112, 0.486);
+    }
+    .upright {
+        text-orientation: upright;
+        text-transform: half-width;
+    }
+}
+
+@media screen and (max-width: 992px) {
     body {
         font-size: 1.5em;
         line-height: 1.5em;
@@ -51,7 +83,7 @@
         font-size: 0.5em;
     }
     /* end navbar stuff */
-
+    
     .wrapper {
         margin-top: 11em;
     }
@@ -65,16 +97,13 @@
         margin-left: auto;
         margin-right: auto;
         float: unset;
-        background-color: rgba(255, 160, 122, 0.747);
-        border: 4px;
-        border-style: solid;
     }
-    #bio-pic {
-        /* Remember IDs always overwrite classes even if the class is
-        in the next-in-line .css file. Have to reset width: auto in an ID for this
-        card and the other cards*/
-        width: auto;
+    #bio-pic-desktop {
+        display: none;
     }
+    #bio-pic-mobile {
+        display: flex;
+    }    
 
     .portfolio-card {
         width: auto;
@@ -104,7 +133,8 @@
     }
     p, p:lang(ja) {
         font-size: 2em;
-        line-height: 2em;
+        line-height: 1.5em;
+        margin: 1rem auto 1rem auto
     }
     #main-bio {
         float: left;

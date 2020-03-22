@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
     font-size: 20px;
     line-height: 150%;
     background-color: rgba(43, 42, 75, 0.671) ;
@@ -63,21 +63,37 @@ h1 {
     padding: .5rem;
     box-shadow: inset 0px -28px 25px -16px rgba(112, 112, 112, 0.486);
 }
+#desktop-h1 {
+    writing-mode: vertical-rl;
+    margin: -1rem -2rem -1rem 1rem; 
+    border-radius: 0 .2rem .2rem 0; 
+    box-shadow: inset 28px 0px 25px -16px rgba(112, 112, 112, 0.486);
+}
 
 /* begin card modifications */
 .card {
     border: unset;
     /* float: left; */
     font-family: 'Nunito', 'Kosugi Maru' sans-serif;
+    background: transparent;
 }
+.card-body {
+    margin-top: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
 .card p {
     margin: 0;
     padding: 0;
     font-size: .8em;
     text-align: center;
 }
-#bio-pic {
+.card-img-top img {
     margin-bottom: .5em;
+}
+.card-img-top {
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
 }
 .portfolio-card {
     margin-left: auto;
@@ -102,25 +118,26 @@ footer {
 
 
 /* the button with my name on it */
-#name, #name-ja {
-    font-weight: 550;
+.name, .name-ja {
+    font-weight: 200;
     text-align: center;
-    margin-top: 0em;
+    margin-top: 0em !important;
     margin-bottom: .5em;
 }
 
 /* Japanese-specific styles */
-:lang("ja") {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-}
+/* :lang("ja") {
+    font-family: 'Noto Sans JP', sans-serif;
+} */
 h1 span:lang(ja) {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: .9em;
-    font-weight: 560;
+    font-weight: 500;
 }
 p:lang("ja") {
     font-size: 1.2em;
     line-height: 1.7em;
+    font-weight: 200;
 }
 .card p:lang("ja") {
     font-size: 0.8em;
