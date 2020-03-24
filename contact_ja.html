@@ -6,9 +6,24 @@
     <title>Moojigに連絡</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/media.css">  
-    <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">       
+    <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">
+    
+    <style>
+        a img, a i {
+            min-height: 21px;
+            max-height: 3rem;
+        }
+        main .row {
+            margin: 1rem 0;
+        }
+        .align-right {
+            text-align: right;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -67,29 +82,30 @@
             </div>
         </div>
         <!-- Name and Email row -->
-        <div class="row">
-            <div class="form-group name-email col-lg-6">
-                <label for="form_name">名前</label>
-                <input id="form_name" type="text" name="name" class="form-control" placeholder="名前を入力してください" required="required">
-            </div>
-            <div class="form-group name-email col-lg-6">
-                <label for="form_email">メール・アドレス</label>
-                <input id="form_email" type="email" name="email" class="form-control" placeholder="メール・アドレスを入力してください" required="required">
-            </div>
-        </div>
-
-        <!-- Message row -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">メッセージ</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="こんにちは…" rows="4" required="required"></textarea>
+        <main class="container">
+            <div class="row">
+                <div class="col-lg-6 align-right">
+                    <a href="https://www.linkedin.com/in/moojigbc/" class="btn btn-lg btn-info">
+                        <img src="assets/LI-Logo.svg" alt="https://www.linkedin.com/in/moojigbc/">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="https://github.com/moojigc" class="btn btn-lg btn-info">
+                        <img src="assets/GitHub_Logo_White.png" alt="https://github.com/moojigc">
+                        <img src="assets/GitHub-Mark-Light-120px-plus.png" alt="Github mark">
+                    </a>
                 </div>
             </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="送信">
+            <hr>
+            <div class="row">
+                <div class="col" style="text-align: center;">
+                    <a style="font-size: 2rem;" href="mailto:moojig@nyu.edu" class="btn btn-lg btn-info">
+                    Email <i class="fas fa-envelope-square"></i>
+                    </a>
+                </div>
             </div>
-        </div>
+            
+        </main>
     </div> 
 
     <footer class="container-fluid" style="position: fixed; bottom: 0;">

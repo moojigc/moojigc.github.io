@@ -6,14 +6,21 @@
     <title>Contact Moojig</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/media.css">  
     <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">
     
     <style>
-        a img, button img, button div {
+        a img, a i {
             min-height: 21px;
-            height: 3rem;
+            max-height: 3rem;
+        }
+        main .row {
+            margin: 1rem 0;
+        }
+        .align-right {
+            text-align: right;
         }
     </style>
 
@@ -75,10 +82,29 @@
             </div>
         </div>
 
-        <main>
-            <a href="https://www.linkedin.com/in/moojigbc/" class="btn btn-lg btn-info">
-                <img src="assets/LI-Logo.svg" alt="https://www.linkedin.com/in/moojigbc/">
-            </a>
+        <main class="container">
+            <div class="row">
+                <div class="col-lg-6 align-right">
+                    <a href="https://www.linkedin.com/in/moojigbc/" class="btn btn-lg btn-info">
+                        <img src="assets/LI-Logo.svg" alt="https://www.linkedin.com/in/moojigbc/">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a href="https://github.com/moojigc" class="btn btn-lg btn-info">
+                        <img src="assets/GitHub_Logo_White.png" alt="https://github.com/moojigc">
+                        <img src="assets/GitHub-Mark-Light-120px-plus.png" alt="Github mark">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col" style="text-align: center;">
+                    <a style="font-size: 2rem;" href="mailto:moojig@nyu.edu" class="btn btn-lg btn-info">
+                    Email <i class="fas fa-envelope-square"></i>
+                    </a>
+                </div>
+            </div>
+            
         </main>
 
     </div> 
