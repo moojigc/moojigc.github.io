@@ -1,7 +1,10 @@
 @media screen and (min-width: 992px) {
     #main-bio-ja {
         writing-mode: vertical-rl;
-        max-height: 25rem;
+        max-height: 28rem;
+    }
+    #main-bio-ja p {
+        /* margin: 0 1rem 0 1rem; */
     }
     #main-bio-ja >:first-child {
         margin-right: 0;
@@ -12,9 +15,11 @@
     #bio-pic-desktop {
         display: flex;
     }
-
+    .card {
+        height: max-content;
+    }
     #body-ja {
-        max-width: 1250px;
+        max-width: 1100px;
     }
 
     #desktop-h1 {

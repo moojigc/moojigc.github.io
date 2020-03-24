@@ -8,7 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/media.css">  
-    <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">       
+    <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">
+    
+    <style>
+        a img, button img, button div {
+            min-height: 21px;
+            height: 3rem;
+        }
+    </style>
+
 </head>
     
 <body>
@@ -67,31 +75,12 @@
             </div>
         </div>
 
-        <!-- Name and Email row -->
-        <div class="row">
-            <div class="form-group name-email col-lg-6 ">
-                <label for="form_name">Name</label>
-                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required">
-            </div>
-            <div class="form-group name-email col-lg-6">
-                <label for="form_email">Email</label>
-                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required">
-            </div>
-        </div>
+        <main>
+            <a href="https://www.linkedin.com/in/moojigbc/" class="btn btn-lg btn-info">
+                <img src="assets/LI-Logo.svg" alt="https://www.linkedin.com/in/moojigbc/">
+            </a>
+        </main>
 
-        <!-- Message row -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="form_message">Message</label>
-                    <textarea id="form_message" name="message" class="form-control" placeholder="What's on your mind?" rows="4" required="required"></textarea>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <input type="submit" class="btn btn-success btn-send" value="Send message">
-            </div>
-        </div>
-    
     </div> 
 
     <footer class="container-fluid" style="position: fixed; bottom: 0;">
