@@ -74,7 +74,7 @@ h1 {
 }
 .card-body {
     margin-top: 1rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
 .card p {
@@ -88,12 +88,9 @@ h1 {
 }
 .card-img-top {
     border-radius: 50%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
-.portfolio-card {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* Footer */
 footer {
@@ -145,4 +142,19 @@ ruby rt {
     margin-top: -.6em;
     line-height: unset;
     /* this doesn't work in Chrome for some reason */
+}
+
+/* Specific to portfolio page */
+.portfolio-card {
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.portfolio-card .card-img-top {
+    border-radius: unset;
+    box-shadow: unset;
+}
+.portfolio-card .card-body {
+    box-shadow: unset;
+    margin: 0;
 }
