@@ -3,14 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>About Moojig</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" type="text/css" href="assets/media.css">
     <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <meta property="og:image" content="assets/moojig-logo-preview.png">
+    <style>
+        a img, a i {
+            min-height: 21px;
+            max-height: 3rem;
+        }
+        .card-body p {
+            margin-bottom: unset;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 4px 15px 2px #0000004a;
+            padding: 1rem;
+        };
+    </style>
 </head>
 
 <body>
@@ -31,9 +49,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
                 <a href="index_ja.html" class="btn btn-primary language-button">
                     日本語
                 </a>
@@ -49,9 +64,6 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
                   </li>
                   <a href="index_ja.html" class="btn btn-primary language-button">
                       日本語
@@ -71,59 +83,57 @@
             <div class="col-lg-4">
                 <!-- start headshot and contact info -->
                 <div id="bio-pic" class="card">
-                    <img src="assets/profile_pic.jpg" class="card-img-top" alt="Moojig's headshot">
-                    <div class="card-body">
+                    <img src="assets/DSC02773.jpg" class="card-img-top headshot" alt="Moojig's headshot">
+                    <div class="card-body" style="font-size: .7rem;">
                         <button type="button" class="name btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
                         <button type="button" class="name-ja btn btn-dark btn-lg btn-block" lang="ja">
                             ムージグ・バッツォクト
                         </button>
-                        <p>Click my name for a transliteration!</p>
+                        <p style="font-size: 1rem; text-align: center;">moojig@nyu.edu | (203) 435-0804</p>
                     </div>
+                    <!-- <div class="card-footer" style="text-align: center;">
+                    </div> -->
                 </div>
             </div>
                 <!-- Main bio section -->
             <div class="col-lg-8">
-                <article id="main-bio" class="c">
+                <article id="main-bio">
                         <p>I'm a <span id='age'>23</span>-year-old from the small town of Orange, CT. I graduated from NYU in 2018, where I received a bachelor's degree in economics with a minor in producing for film & television. 
-                            My hobbies include photography, videogames, anime, and manga. You can see some of my photos at my (SquareSpace hosted) website, <a href="https://www.moojigbc.com">moojigbc.com</a>.
+                            In my free time, I like to indulge in photography, videogames, anime, and manga. You can see some of my photos at my (SquareSpace hosted) website, <a href="https://www.moojigbc.com">moojigbc.com</a>.
                         </p>
-                        <p> Right now, I'm taking UConn's Coding Bootcamp, where I'm learning full-stack web development.
-                        </p>    
+                        <p> Right now, I'm taking UConn's Coding Bootcamp, where I'm training in full-stack web development using modern, JavaScript-based technologies.
+                        </p> 
+                        <p>
+                            Check out my <a href="portfolio.html">portfolio page</a> to see examples of my past projects as well as the source code.
+                        </p>   
                 </article>   
+            </div>
+        </div>
+        <div class="row" style="margin: 1rem -1rem -1rem -1rem">
+            <div class="col contact-info">
+                <a href="https://github.com/moojigc" class="btn btn-lg btn-info">
+                    <img src="assets/GitHub_Logo_White.png" alt="https://github.com/moojigc">
+                    <img src="assets/GitHub-Mark-Light-120px-plus.png" alt="Github mark">
+                </a>
+                <a style="font-size: 2rem;" href="mailto:moojig@nyu.edu" class="btn btn-lg btn-info">
+                Email <i class="fas fa-envelope-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/moojigbc/" class="btn btn-lg btn-info">
+                    <img src="assets/LI-Logo.svg" alt="https://www.linkedin.com/in/moojigbc/">
+                </a>
+                <a style="font-size: 2rem;" href="assets/moojig_battsogt_resume2020.pdf" class="btn btn-lg btn-info">
+                    Resume <i class="far fa-file-pdf"></i>
+                    </a>
             </div>
         </div>
     </div>
 
-    <footer class="container-fluid">
-        <p id="footer-name">© Munkhtsogt Battsogt 2020</p>
+    <footer>
+        © Munkhtsogt Battsogt 2020
     </footer>
-
-    <script>
-         var nameEnglish = document.querySelector(".name");
-        var nameJapanese = document.querySelector(".name-ja");
-
-        nameJapanese.style.display = "none";
-
-        function changeToKatakana() {
-            nameJapanese.style.display = "block";
-            nameEnglish.style.display = "none";
-        }
-
-        function changeToEnglish() {
-            nameJapanese.style.display = "none";
-            nameEnglish.style.display = "block";
-        }
-
-        nameEnglish.addEventListener("click", changeToKatakana);
-        nameJapanese.addEventListener("click", changeToEnglish);
-
-        function autoUpdateAge() { // Because I am lazy
-            age = parseInt(moment('19960229', 'YYYYMMDD').fromNow());
-            document.querySelector("#age").textContent =age;
-        }
-        autoUpdateAge();
-    </script>
-
+    
+    <script src="./scripts/name-and-age.js" ></script>
+    
 </body>
 
 </html> 
