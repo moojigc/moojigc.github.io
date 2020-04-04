@@ -18,6 +18,9 @@
     .card {
         height: max-content;
     }
+    .card p {
+        font-size: 1rem;
+    }
     .headshot {
         max-width: 20rem;
     }
@@ -121,13 +124,14 @@
     }
     .portfolio-card {
         width: auto;
-        margin: 0em 1em 4em 1em;
+        margin: 1rem;
     }
-    .card p {
-        font-size: 1.5em;
+    .card {
+        font-size: 4rem;
     }
     .card .btn {
-        font-size: 2em;
+        font-size: 2rem;
+        margin: 0;
     }
 
     /* FORM Styles */
