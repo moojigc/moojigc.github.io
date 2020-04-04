@@ -18,6 +18,9 @@
     .card {
         height: max-content;
     }
+    .headshot {
+        max-width: 20rem;
+    }
     #body-ja {
         max-width: 1100px;
     }
