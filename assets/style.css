@@ -1,11 +1,13 @@
-html { height: 100%; }
+html { 
+    height: 100%;
+}
 body {
-    min-height: calc(100% - 90px);
     height: inherit;
     font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
     font-size: 20px;
     line-height: 150%;
-    background-color: rgba(43, 42, 75, 0.671) ;
+    background: rgb(28,31,76);
+    background: linear-gradient(180deg, rgba(28,31,76,1) 0%, rgba(149,95,43,0.6586835417760855) 75%, rgba(254,151,15,1) 100%); 
     color: black;
     margin: 0;
     padding: 0;
@@ -48,6 +50,11 @@ nav img {
     padding: 1rem;
     margin-bottom: 5em;
 }
+
+.bg-dark {
+    background:#00000057 !important;
+}
+
 .row {
     margin: 0;
 }
@@ -59,9 +66,10 @@ h1 {
     margin: 0;
 }
 .page-h1 {
+    color: white;
     text-align: center;
     margin: -1rem -1rem 1rem -1rem;
-    background-color: rgba(250, 205, 135, 0.38);
+    background-color: #45385b;
     border-radius: .2rem .2rem 0 0;
     padding: .5rem;
     box-shadow: inset 0px -28px 25px -16px rgba(112, 112, 112, 0.486);
@@ -94,13 +102,28 @@ h1 {
     margin: 0 auto 0 auto;
 }
 
+.btn-info {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/* name button */
+.btn-dark {
+    background-color:#12224b;
+    border-color: transparent;
+}
+/* github linkedin buttons */
+.btn-info {
+    background-color: #98aede;
+    border-color: transparent;
+
+}
 
 /* Footer */
 footer {
     /* position: absolute; */
     /* bottom: 0px; */
     width: 100%;
-    background-color: #343a40;
+    background-color: transparent;
     text-align: center;
     margin-top: 1.5em;
     font-family: 'Montserrat', sans-serif;
