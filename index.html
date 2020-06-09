@@ -1,135 +1,96 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+		<meta property="og:image" content="/assets/moojig-logo.png" />
+		<title>Moojig Battsogt</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>About Moojig</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Nunito|Montserrat|Sawarabi+Mincho&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/media.css">
-    <link rel="stylesheet" type="text/css" href="assets/media-landscape.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
-    <meta property="og:image" content="assets/moojig-logo-preview.png">
-    <style>
-        a img, a i {
-            min-height: 21px;
-            max-height: 3rem;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
-            box-shadow: 0px 4px 15px 2px #0000004a;
-            padding: 1rem;
-        };
-    </style>
-</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="https://www.moojigbc.com" class="brand-logo" style="height: 100%;">
+					<img src="assets/moojig-logo-white.png" alt="logo" style="height: inherit; padding: 0.5rem;" />
+				</a>
+				<ul style="margin-right: 0.5rem;" class="right hide-on-med-and-down">
+					<li><a href="https://www.moojigbc.com">About</a></li>
+					<li><a href="https://www.moojigbc.com/en/portfolio">Portfolio</a></li>
+					<li><a href="https://www.moojigbc.com/ja" class="btn">日本語</a></li>
+				</ul>
+			</div>
+			<div class="nav-wrapper">
+				<ul class="mobile-nav">
+					<li><a href="https://www.moojigbc.com">About</a></li>
+					<li><a href="https://www.moojigbc.com/en/portfolio">Portfolio</a></li>
+					<li><a href="https://www.moojigbc.com/ja" class="btn">日本語</a></li>
+				</ul>
+			</div>
+		</nav>
 
-<body>
-    <header id="header-en">
-        <!-- Hidden img on desktop??? -->
-        <div class="mobile-logo-container mobile">
-            <img id="mobile-image" class="navbar-brand mobile" src="assets/moojig-logo-white.png" alt="Moojig-logo">
-        </div>
-        <!-- Desktop navbar???? -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark desktop">
-            <img class="navbar-brand desktop" src="assets/moojig-logo-white.png" alt="Moojig-logo">
-
-            <div id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <a href="index_ja.html" class="btn btn-primary language-button">
-                    日本語
-                </a>
-              </ul>
-            </div>
-        </nav>
-        <!-- Mobile navbar???? -->
-        <div class="navbar navbar-expand-lg navbar-light bg-light mobile">
-            <div id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <a href="index_ja.html" class="btn btn-primary language-button">
-                      日本語
-                  </a>
-                </ul>
-              </div>
-        </div>
-    </header>
-
-    <div id="body-en" class="container-lg wrapper">
-        <div class="row page-h1">
-            <div class="col-sm-12">
-                <h1>About Me</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <!-- start headshot and contact info -->
-                <div id="bio-pic" class="card">
-                    <img src="assets/DSC02773.jpg" class="card-img-top headshot" alt="Moojig's headshot">
-                    <div class="card-body" style="font-size: .7rem;">
-                        <button type="button" class="name btn btn-dark btn-lg btn-block">M. Moojig Battsogt</button>
-                        <button type="button" class="name-ja btn btn-dark btn-lg btn-block" lang="ja">
-                            ムージグ・バッツォクト
-                        </button>
-                        <p>moojig@nyu.edu | (203) 435-0804</p>
-                    </div>
-                    <!-- <div class="card-footer" style="text-align: center;">
-                    </div> -->
-                </div>
-            </div>
-                <!-- Main bio section -->
-            <div class="col-lg-8">
-                <article id="main-bio">
-                        <p>I'm a <span id='age'>23</span>-year-old from the small town of Orange, CT. I graduated from NYU in 2018, where I received a bachelor's degree in economics with a minor in producing for film & television. 
-                            In my free time, I like to indulge in photography, videogames, anime, and manga. You can see some of my photos at my (SquareSpace hosted) website, <a href="https://www.moojigbc.com">moojigbc.com</a>.
-                        </p>
-                        <p> Right now, I'm taking UConn's Coding Bootcamp, where I'm training in full-stack web development using modern, JavaScript-based technologies.
-                        </p> 
-                        <p>
-                            Check out my <a href="portfolio.html">portfolio page</a> to see examples of my past projects as well as the source code.
-                        </p>   
-                </article>   
-            </div>
-        </div>
-        <div class="row" style="margin: 1rem -1rem -1rem -1rem">
-            <div class="col contact-info">
-                <a href="https://github.com/moojigc" class="btn btn-lg btn-info">
-                    <img src="assets/GitHub_Logo_White.png" alt="https://github.com/moojigc">
-                    <img src="assets/GitHub-Mark-Light-120px-plus.png" alt="Github mark">
-                </a>
-                <a style="font-size: 2rem;" href="mailto:moojig@nyu.edu" class="btn btn-lg btn-info">
-                Email <i class="fas fa-envelope-square"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/moojigbc/" class="btn btn-lg btn-info">
-                    <img src="assets/LI-Logo.svg" alt="https://www.linkedin.com/in/moojigbc/">
-                </a>
-                <a style="font-size: 2rem;" href="assets/moojig_battsogt_resume2020.pdf" class="btn btn-lg btn-info">
-                    Resume <i class="far fa-file-pdf"></i>
-                    </a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        © Munkhtsogt Battsogt 2020
-    </footer>
-    
-    <script src="./scripts/name-and-age.js" ></script>
-    
-</body>
-
-</html> 
+		<main class="container wrapper">
+			<header>
+				<h1>About Me</h1>
+			</header>
+			<article>
+				<div class="row">
+					<div class="col l4">
+						<div class="card headshot">
+							<div class="card-image">
+								<img src="assets/DSC02773.jpg" alt="headshot" />
+							</div>
+							<div class="card-content">
+								<button class="btn darken-4 btn-en" style="margin-bottom: 0.25rem; color: black;">M. Moojig Battsogt</button>
+								<button class="btn darken-4 btn-ja" style="margin-bottom: 0.25rem; display: none; color: black;">ムージグ・バッツォクト</button>
+								<p>me@moojig.dev | (203) 435-0804</p>
+							</div>
+						</div>
+					</div>
+					<div class="col l8">
+						<p>I'm a <span id="age"></span>-year-old from the small town of Orange, CT. I'm currently enrolled in UConn's Coding Bootcamp, where I'm training in full-stack web development using JavaScript-based technologies.</p>
+						<p>
+							I graduated from NYU in 2018, where I received a bachelor's degree in economics with a minor in producing for film & television. In my free time, I like to indulge in photography and videogames, as well as Japanese anime and manga.
+						</p>
+						<p>Check out my <a href="https://www.moojigbc.com/en/portfolio" style="color: #5b7bc1;">portfolio page</a> to see examples of my past projects as well as the source code.</p>
+					</div>
+				</div>
+				<div class="contact row">
+					<div class="col">
+						<a href="https://github.com/moojigc" class="btn-large">
+							<img src="assets/images/GitHub_Logo_White.png" style="width: auto;" alt="https://github.com/moojigc" />
+							<img src="assets/images/GitHub-Mark-Light-120px-plus.png" style="width: auto;" alt="Github mark" />
+						</a>
+						<a style="font-size: 1rem;" href="mailto:moojig@nyu.edu" class="btn-large"> Email <i class="fas fa-envelope-square" style="margin-left: 0.25rem;"></i> </a>
+						<a href="https://www.linkedin.com/in/moojigbc/" class="btn-large">
+							<img src="assets/images/LI-Logo.svg" alt="https://www.linkedin.com/in/moojigbc/" />
+						</a>
+						<a style="font-size: 1rem; color: white;" href="https://www.moojigbc.com/assets/moojig_resume2020.pdf" class="btn-large"> Resume <i class="far fa-file-pdf" style="margin-left: 0.25rem;"></i> </a>
+					</div>
+				</div>
+			</article>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(() => {
+				const $btnEnglish = $(".btn-en"),
+					$btnJa = $(".btn-ja");
+				$btnEnglish.on("click", (event) => {
+					$(event.target).hide();
+					$btnJa.fadeIn("slow");
+				});
+				$btnJa.on("click", (event) => {
+					$(event.target).hide();
+					$btnEnglish.fadeIn("slow");
+				});
+				let age = parseInt(moment("19960229", "YYYYMMDD").fromNow());
+				$("#age").text(age);
+			});
+		</script>
+	</body>
+</html>

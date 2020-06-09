@@ -1,6 +1,5 @@
 # moojigc.github.io
 
-My autobiography created using the Bootstrap CSS framework. Automatically scales for mobile devices. Navbar collapses into two rows on mobile.  Navbar changes back on landscape-oriented devices so it doesn't take up too much screen space.
+## **UPDATE: This site now deprecated! Please visit [moojigbc.com](https://www.moojigbc.com) instead.**
 
-日本語 version also available at the click of a button !(^^)!.
-
+My portfolio site, created with the Materialize CSS framework, and incorporating mobile-responsive design.
